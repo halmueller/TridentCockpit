@@ -61,6 +61,7 @@
 		0A71311A23636B1700817593 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A71311923636B1700817593 /* Main.storyboard */; };
 		0A71311C23636B5C00817593 /* TridentCockpit.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A71311B23636B5C00817593 /* TridentCockpit.scnassets */; };
 		0A71313B23637F0700817593 /* FastRTPS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A71313A23637F0700817593 /* FastRTPS.swift */; };
+		0AC6329D2371EF92009BB4B4 /* PlayDemoVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC6329C2371EF92009BB4B4 /* PlayDemoVideo.swift */; };
 		0AD99390236703FC00D037A3 /* FastRTPSBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD9938F236703FC00D037A3 /* FastRTPSBridge.framework */; };
 		0AD99391236703FC00D037A3 /* FastRTPSBridge.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD9938F236703FC00D037A3 /* FastRTPSBridge.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -156,6 +157,7 @@
 		0A71311923636B1700817593 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		0A71311B23636B5C00817593 /* TridentCockpit.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = TridentCockpit.scnassets; sourceTree = "<group>"; };
 		0A71313A23637F0700817593 /* FastRTPS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastRTPS.swift; sourceTree = "<group>"; };
+		0AC6329C2371EF92009BB4B4 /* PlayDemoVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayDemoVideo.swift; sourceTree = "<group>"; };
 		0AD9938F236703FC00D037A3 /* FastRTPSBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FastRTPSBridge.framework; path = Carthage/Build/Mac/FastRTPSBridge.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -218,6 +220,7 @@
 			children = (
 				0A7130CD23636AF100817593 /* AppDelegate.swift */,
 				0A7130D323636AF200817593 /* VideoViewController.swift */,
+				0AC6329C2371EF92009BB4B4 /* PlayDemoVideo.swift */,
 				0A2E42BB236B0EE900B5C569 /* VideoView.swift */,
 				0A7130CC23636AF100817593 /* VideoDecoder.swift */,
 				0A7130C923636AF100817593 /* AutoSWindowController.swift */,
@@ -395,6 +398,7 @@
 				0A71310D23636B0200817593 /* RovTridentMotorCommand.swift in Sources */,
 				0A7130D823636AF200817593 /* VideoDecoder.swift in Sources */,
 				0A71310323636B0200817593 /* RovVector3.swift in Sources */,
+				0AC6329D2371EF92009BB4B4 /* PlayDemoVideo.swift in Sources */,
 				0A71310423636B0200817593 /* RovControlDescriptor.swift in Sources */,
 				0A71311123636B0200817593 /* RovControllerStatus.swift in Sources */,
 				0A71311823636B0200817593 /* RovLightPower.swift in Sources */,

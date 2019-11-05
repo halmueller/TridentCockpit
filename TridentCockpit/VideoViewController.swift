@@ -29,10 +29,13 @@ class VideoViewController: NSViewController, NSWindowDelegate {
     private var vehicleId: String?
     private var rovBeacon: RovBeacon?
     
-    private var depth: Float = 0 {
+    var timeObserverToken: Any?
+    var avPlayerView: NSView?
+    
+    var depth: Float = 0 {
         didSet { depthLabel.stringValue = String(format: "%.1f", depth) }
     }
-    private var temperature: Double = 0 {
+    var temperature: Double = 0 {
         didSet { tempLabel.stringValue = String(format: "%.1f", temperature) }
     }
     
@@ -183,6 +186,14 @@ class VideoViewController: NSViewController, NSWindowDelegate {
             super.keyDown(with: event)
         }
     }
+    
+    #if DEBUG
+    override func mouseDown(with event: NSEvent) {
+        if event.clickCount == 2 {
+            playDemoVideo()
+        }
+    }
+    #endif
     
     private func setTelemetryOverlay(mode: String) {
         switch mode {
